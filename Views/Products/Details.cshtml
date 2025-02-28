@@ -1,0 +1,62 @@
+﻿@model MyProject.Models.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product Details</h2>
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <br />
+        <br />
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryID)
+        </dd>
+
+        <br />
+        <br />
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+
+        <br />
+        <br />
+
+        <dt>
+            <p> Descrition</p>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <br />
+        <br />
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit Details", "Edit", new { id = Model.ProductID }, new {@class="btn btn-success"}) |
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-secondary" })
+</p>
