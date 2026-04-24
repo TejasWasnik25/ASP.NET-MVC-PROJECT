@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+//controller function - 
 namespace MyProject.Controllers
 {
     public class HomeController : Controller
