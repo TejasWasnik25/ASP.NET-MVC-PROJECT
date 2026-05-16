@@ -18,6 +18,11 @@ namespace MyProject.Models
 
         public string ProductName { get; set; }
 
+		public string myFunction
+		{
+			//
+		}
+
         public int CategoryID { get; set; }
 
         [Required(ErrorMessage = "Category Name Required.")]
